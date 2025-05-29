@@ -14,10 +14,11 @@ pipeline {
             }
         }
 
-        stage('Run Docker Container') {
-            steps {
-                bat 'echo "Running Docker Container..."'
-            }
-        }
+       stage('Run Docker Container') {
+    steps {
+        bat 'docker run -d --name flask-app -p 5000:5000 my-app-image'
+    }
+}
+
     }
 }
