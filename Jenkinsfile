@@ -16,7 +16,7 @@ pipeline {
 
         stage('Run Docker Container') {
             steps {
-                sh 'echo "Running Docker Container..."'
+                bat 'echo "Running Docker Container..."'
             }
         }
     }
