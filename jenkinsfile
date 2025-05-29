@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Bucky51/devops-integration-project.git'
+                git 'https://github.com/Bucky51/devops-integration-project'
             }
         }
         stage('Build Docker Image') {
