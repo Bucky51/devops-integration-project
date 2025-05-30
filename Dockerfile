@@ -2,7 +2,7 @@
 FROM python:3.9-slim
 
 # Set working directory
-WORKDIR /Myapp
+WORKDIR /app
 
 # Copy current directory contents into the container at /app
 COPY . /app
